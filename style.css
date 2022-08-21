@@ -1,8 +1,16 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Ubuntu:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Font family 
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif
+*/
 
 /* Global attributes */
 
@@ -36,7 +44,7 @@
     background-color: rgb(244, 103, 103);
     border-bottom-left-radius: 5rem;
     padding: 2rem 1rem;
-    height: 475px;
+    height: 600px;
 }
 
 /* Navigation bar */
@@ -47,6 +55,9 @@ nav{
 }
 
 .logo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 5rem;
 }
 
@@ -60,19 +71,27 @@ nav{
     display: none;
 }
 
+.show{
+    display: flex;
+}
+
 /* Mobile Navigation options */
 
 .dropdowns{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1.5rem;
     padding: 1.5rem 0;
     background-color: var(--white);
-    min-height: 20rem;
+    min-height: 23rem;
     height: auto;
+    width: 90%;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    font-family: 'Overpass', sans-serif;
+    z-index: 1;
 }
 
 ul .dropdown{
@@ -83,7 +102,7 @@ ul .dropdown{
 ul .dropdown a{
     text-decoration: none;
     color: var(--very-dark-blue);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -106,7 +125,8 @@ ul .dropdown a{
 
 #connect{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: var(--very-dark-blue);
 }
 
 .gray-show{
@@ -123,6 +143,8 @@ ul .dropdown a{
 .gray-show ul li{
     list-style-type: none;
     padding: .5rem 0;
+    text-align: center;
+    color: var(--very-dark-blue);
 }
 
 .line{
@@ -146,21 +168,25 @@ ul .dropdown a{
 .dropdowns .buttons .login{
     background: transparent;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: var(--very-dark-blue);
 }
 
 .dropdowns .buttons .sign-up{
     background: linear-gradient(var(--Very-light-red), var(--Light-red));
+    color: var(--white);
+    font-size: 18px;
+    margin: .5rem .5rem;
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 1rem;
-    font-size: 1.2rem;
+    border-radius: 2rem;
 }
 
 /* Header/Showcase Section */
 
 .header{
     position: relative;
-    top: 30%;
+    top: 23%;
 }
 
 .header .showcase-header{
@@ -170,8 +196,49 @@ ul .dropdown a{
     justify-content: center;
 }
 
-.header .showcase-header h1,
-.header .showcase-header p{
+.showcase-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-text h1{
+    width: 90%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    color: var(--white);
     text-align: center;
 }
 
+.showcase-text p{
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+    width: 80%;
+    margin-top: .2rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Overpass', sans-serif;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+.showcase-buttons button{
+    font-size: 18px;
+    margin: .5rem .5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 550;
+}
+
+.showcase-buttons .free{
+    color: var(--light-red);
+}
+
+.showcase-buttons .learn{
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
