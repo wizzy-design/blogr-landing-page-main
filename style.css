@@ -197,7 +197,7 @@ ul .dropdown a{
 
 .header{
     position: relative;
-    top: 23%;
+    top: 20%;
 }
 
 .header .showcase-header{
@@ -299,25 +299,64 @@ ul .dropdown a{
 
 /* State of the art */
 .sota{
+    position: relative;
+}
+
+.sota-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--Very-dark-gray-blue);
+    margin-top: 15rem;
     height: 160vh;
+    overflow: hidden;
 }
 
-.phones img{
+img#phone{
+    position: absolute;
+    /* bottom: -700px; */
+    left: 50%;
+    transform: translate(-50%, -50%); 
     width: 100%;
+    max-width: 418px;
+    z-index: 1;
+}
+
+.phones img#circle{
+    position: absolute;
+    top: -200px;
+    right: -120px;
+    width: 160%;
+    z-index: 0;
+    opacity: 90%;
 }
 
 .sota-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 13rem;
+    z-index: 1;
 }
 
 .sota-text h1,
 .sota-text p{
     text-align: center;
+}
+
+.sota-text h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+}
+
+.sota-text p{
+    width: 90%;
+    line-height: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--grayish-blue);
 }
 
 
