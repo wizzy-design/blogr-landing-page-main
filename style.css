@@ -284,13 +284,13 @@ ul .dropdown a{
 }
 
 .design-texts h1{
-    width: 90%;
+    width: 80%;
     text-align: center;
 }
 
 .design-texts p{
     width: 85%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: var(--very-dark-grayish-blue);
     font-family: 'Ubuntu', sans-serif;
