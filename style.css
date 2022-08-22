@@ -82,12 +82,14 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     padding: 1.5rem 0;
     background-color: var(--white);
     min-height: 23rem;
     height: auto;
     width: 90%;
+    left: 5%;
+    right: 30%;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     font-family: 'Overpass', sans-serif;
@@ -127,6 +129,11 @@ ul .dropdown a{
     text-align: center;
     font-size: 1.3rem;
     color: var(--very-dark-blue);
+}
+
+.rotate-arrow{
+    transform: rotate(178deg);
+    transition: all 0.3s ease;
 }
 
 .gray-show{
@@ -214,7 +221,6 @@ ul .dropdown a{
 }
 
 .showcase-text p{
-    color: var(--grayish-blue);
     font-size: 1.2rem;
     width: 80%;
     margin-top: .2rem;
@@ -242,3 +248,49 @@ ul .dropdown a{
     background-color: transparent;
     border: 1px solid var(--white);
 }
+
+/* Design Section */
+
+.design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+    min-height: 160vh;
+}
+
+.design h1{
+    font-size: 1.8rem;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--very-dark-blue);
+}
+
+.design-img{
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.design-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5rem 0;
+}
+
+.design-texts h1{
+    width: 90%;
+    text-align: center;
+}
+
+.design-texts p{
+    width: 85%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--very-dark-grayish-blue);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 2rem; 
+}
+
