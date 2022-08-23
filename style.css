@@ -309,8 +309,10 @@ ul .dropdown a{
     align-items: center;
     background: var(--Very-dark-gray-blue);
     margin-top: 15rem;
-    height: 160vh;
+    height: 100vh;
     overflow: hidden;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
 }
 
 img#phone{
@@ -329,7 +331,7 @@ img#phone{
     right: -120px;
     width: 160%;
     z-index: 0;
-    opacity: 90%;
+    opacity: 50%;
 }
 
 .sota-text{
@@ -357,6 +359,41 @@ img#phone{
     line-height: 2rem;
     font-family: 'Ubuntu', sans-serif;
     color: var(--grayish-blue);
+}
+
+/* Features */
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.features-texts{
+    margin: 1rem 0;
+}
+
+.features-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+}
+
+.features-text h1{
+    font-size: 1.8rem;
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--very-dark-blue);
+}
+
+.features-text p{
+    width: 90%;
+    font-size: 1rem;
+    color: var(--very-dark-grayish-blue);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 2rem;
 }
 
 
