@@ -2,8 +2,8 @@
 const burgerOpen = document.querySelectorAll(".activator-buttons img")[0];
 const burgerClose = document.querySelectorAll(".activator-buttons img")[1];
 const dropdown = document.querySelector("#dropdowns-div");
-const connect = document.querySelector("#connect");
-const connectArrow = document.querySelector("#connect img");
+const drop = document.querySelector("#drop");
+const dropArrow = document.querySelector("#drop img");
 const summary = document.querySelector("summary");
 
 // To open mobile nav
@@ -22,6 +22,6 @@ burgerClose.addEventListener("click", () => {
     burgerOpen.classList.remove("inactive");
 })
 
-connect.addEventListener, summary.addEventListener("click", () => {
-    connectArrow.classList.toggle("rotate-arrow");
+drop.addEventListener, summary.addEventListener("click", () => {
+    dropArrow.classList.toggle("rotate-arrow");
 })
