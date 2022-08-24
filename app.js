@@ -4,10 +4,15 @@ const burgerClose = document.querySelectorAll(".activator-buttons img")[1];
 const dropdown = document.querySelector("#dropdowns-div");
 const drop = document.querySelector(".drop");
 
-// Arrow icon
-const dropArrow1 = document.querySelectorAll(".drop img")[0];
-const dropArrow2 = document.querySelectorAll(".drop img")[1];
-const dropArrow3 = document.querySelectorAll(".drop img")[2];
+// Dark Arrow Icon
+const dropArrow1 = document.querySelectorAll(".drop .dark")[0];
+const dropArrow2 = document.querySelectorAll(".drop .dark")[1];
+const dropArrow3 = document.querySelectorAll(".drop .dark")[2];
+
+// Light Arrow Icon
+const dropArrow4 = document.querySelectorAll(".drop .light")[0];
+const dropArrow5 = document.querySelectorAll(".drop .light")[1];
+const dropArrow6 = document.querySelectorAll(".drop .light")[2];
 
 // Summary 
 const summary1 = document.querySelectorAll("summary")[0];
@@ -33,13 +38,16 @@ burgerClose.addEventListener("click", () => {
 // To give the dropdown arrows in mobile nav interactive
 summary1.addEventListener("click", () => {
     dropArrow1.classList.toggle("rotate-arrow");
+    dropArrow4.classList.toggle("rotate-arrow");
 })
 
 summary2.addEventListener("click", () => {
     dropArrow2.classList.toggle("rotate-arrow");
+    dropArrow5.classList.toggle("rotate-arrow");
 })
 
 summary3.addEventListener("click", () => {
     dropArrow3.classList.toggle("rotate-arrow");
+    dropArrow6.classList.toggle("rotate-arrow");
 })
 
