@@ -277,6 +277,14 @@ ul .dropdown a{
     justify-content: center;
 }
 
+.design-img1{
+    display: flex;
+}
+
+.design-img2{
+    display: none;
+}
+
 .design-text{
     display: flex;
     flex-direction: column;
@@ -444,6 +452,8 @@ footer ul li{
 
 /* Laptop version */
 @media screen and (min-width: 1024px){
+
+    /* Navigation & Showcase area */
     .inactive{
         display: flex;
     }
@@ -584,5 +594,51 @@ footer ul li{
         background: var(--white);
         cursor: pointer;
     }
+
+    /* Design section */
+    #design-head{
+        font-size: 2.2rem;
+    }
+
+    .showcase-design{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .design-img1{
+        display: none;
+    }
+
+    .design-img2{
+        position: relative;
+        display: flex;
+        width: 235%;
+        top: -3.5rem;
+    }
+
+    .design-texts{
+        margin-left: 4rem;
+    }
+
+    .design-texts h1,
+    .design-texts p{
+        text-align: left;
+    }
+
+    .design-texts h1{
+        font-size: 1.5rem;
+    }
+
+    .design-texts p{
+        width: 65%;
+    }
+
+    .design-text{
+        align-items: flex-start;
+    }
+
+
     
 }
