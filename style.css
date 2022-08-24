@@ -241,7 +241,8 @@ ul .dropdown a{
     padding: 1rem 1rem;
     border: none;
     border-radius: 2rem;
-    font-weight: 550;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
 }
 
 .showcase-buttons .free{
