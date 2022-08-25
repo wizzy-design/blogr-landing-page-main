@@ -639,6 +639,88 @@ footer ul li{
         align-items: flex-start;
     }
 
+    /* State of the art section */
+    .sota{
+        position: relative;
+        /* bottom: 40%; */
+    }
 
-    
+    .sota-container{
+        height: 23rem;
+        margin-top: -28rem;
+        margin-bottom: 5rem;
+    }
+
+    img#phone{
+        position: relative;
+        left: 22%;
+        top: 195px;
+    }
+
+    .phones img#circle{
+        width: 70%;
+        left: -150px;
+    }
+
+    .sota-text{
+        position: relative;
+        left: 25%;
+        align-items: flex-start;
+        width: 60%;
+        margin-top: 6rem;
+    }
+
+    .sota-text h1{
+        font-size: 2.1rem;
+    }
+
+    .sota-text h1,
+    .sota-text p{
+        text-align: left;
+    }
+
+    /* Features section */
+
+    .features{
+        flex-direction: row;
+        margin-top: 9rem;
+    }
+
+    .features .design-img2{
+        left: -11rem;
+        width: 120%;
+    }
+
+    .features-texts{
+        width: 100%;
+    }
+
+    .features-text{
+        /* width: 80%; */
+        align-items: flex-start;
+    }
+
+    .features-text h1{
+        align-items: flex-start;
+    }
+
+    .features-text p{
+        text-align: left;
+    }
+
+    /* Footer */
+    .footer{
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    footer{
+        margin: 0 8rem;
+        flex-direction: row;
+        gap: 8rem;
+        height: 180px;
+        align-items: start;
+    }
 }
