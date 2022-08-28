@@ -4,7 +4,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ### Link
 
-- Live Site URL: [portfolio link](https://wizzy-design.github.io/wisdom_portfolio/)
+- Live Site URL: [Blogr landing page](https://wizzy-design.github.io/blogr-landing-page-main/)
 
 ### Screenshot
 
